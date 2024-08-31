@@ -45,7 +45,6 @@
     display:flex; /* Define que o conteúdos dentro de uma div fiquem flexíveis, podendo ser organizados em uma página */
     justify-content: center; /* Alinha os conteúdos dentro dessa div horizontalmente, como texto: esquerda, meio, direita, com espaço entre etc.*/
     align-items:center; /* Alinha os conteúdos dentro dessa div verticalmente, no topo, meio, fim, linha de base etc. */
-    flex-wrap: wrap; /* Caso o tamanho dos elementos exceda, é "quebrado uma linha" e colocado os elementos abaixo */
     flex-direction: column;
     height: 70vh; /* para distribuirmos os tamanhos igualmente entre os elementos usando a propriedade "flex", o content precisa ter uma altura predefinida */
 }
@@ -57,7 +56,7 @@
 /* Para usar a propriedade flex, é obrigatório usar a propriedade "display: flex" em todos os seletores */
 .footer{
     display: flex; 
-    width: 1000px;
+    width: 1000px; /* acho que eu preciso especificar uma largura para footer. não sei se tem como fazer de outra maneira,  de ocupar toda a largura do content (deve ter, mas eu sou voado) */
     flex:1;
 }
 
