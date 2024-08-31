@@ -41,6 +41,26 @@ header{
     width: 100%;
 }
 
+.button{
+    color: #FFF;
+    background-color: #c084fc;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #5D6063;
+    border-radius: 5px;
+
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    width: 100px;
+    margin: 10px;
+    
+}
+
+.button:hover{
+    background-color: #972eff;
+    text-decoration: underline;
+}
+
 .container{
     background-color: #d8b4fe;
     display:flex; /* Define que o conteúdos dentro de uma div fiquem flexíveis, podendo ser organizados em uma página */
@@ -110,23 +130,4 @@ header{
     flex: 1;
 }
 
-.button{
-    color: #FFF;
-    background-color: #c084fc;
-    padding: 10px;
-    text-align: center;
-    border: 2px solid #5D6063;
-    border-radius: 5px;
-
-    text-decoration: none;
-    transition: background-color 0.2s ease;
-    width: 100px;
-    margin: 10px;
-    
-}
-
-.button:hover{
-    color: #FFF;
-    background-color: #972eff;
-    text-decoration: underline;
-}
+/* Layout2 */
