@@ -47,35 +47,35 @@
     align-items:center; /* Alinha os conteúdos dentro dessa div verticalmente, no topo, meio, fim, linha de base etc. */
     flex-wrap: wrap; /* Caso o tamanho dos elementos exceda, é "quebrado uma linha" e colocado os elementos abaixo */
     flex-direction: column;
-    height: 70vh;
+    height: 70vh; /* para distribuirmos os tamanhos igualmente entre os elementos usando a propriedade "flex", o content precisa ter uma altura predefinida */
 }
 
 .purple-back{
     background-color: rgb(114, 54, 114);
 }
 
+/* Para usar a propriedade flex, é obrigatório usar a propriedade "display: flex" em todos os seletores */
 .footer{
-    display:flex;
-    width:1000px;
-    height: 100px;
-    flex:1; /* Por conta do flex, a altura não funciona */
+    display: flex; 
+    width: 1000px;
+    flex:1;
 }
 
 .menu{
-    display:flex;
-    flex:1;
+    display: flex;
+    flex: 1;
     background-color:rgb(88, 47, 126);
 }
 
 .header{
-    display:flex;
-    flex:1;
+    display: flex;
+    flex: 1;
     background-color: rgb(181, 248, 221)
 }
 
 .article{
-    display:flex;
-    flex:1;
+    display: flex;
+    flex: 1;
     background-color: rgb(87, 148, 184);
 }
 
@@ -84,19 +84,18 @@
 }
 
 .block1{
-    display:flex;
-    flex:2;
-    width:1000px;
+    display: flex;
+    flex: 2;
+    width: 1000px;
 }
 
 .block2{
-    display:flex;
+    display: flex;
     flex: 2;
     flex-direction: column;
-    
 }
 
 .block3{
-    display:flex;
-    flex:1;
+    display: flex;
+    flex: 1;
 }
