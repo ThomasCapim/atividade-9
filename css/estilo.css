@@ -32,8 +32,17 @@
     display:flex;
     flex:2;
 } */
+header{
+    display:flex;
+    justify-content: center;
+    align-self: flex-start;
+    background-color: #2e064e;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.4);
+    width: 100%;
+}
+
 .container{
-    background-color: rgb(255, 232, 232);
+    background-color: #d8b4fe;
     display:flex; /* Define que o conteúdos dentro de uma div fiquem flexíveis, podendo ser organizados em uma página */
     justify-content: center; /* Alinha os conteúdos dentro dessa div horizontalmente, como texto: esquerda, meio, direita, com espaço entre etc.*/
     align-items:center; /* Alinha os conteúdos dentro dessa div verticalmente, no topo, meio, fim, linha de base etc. */
@@ -50,39 +59,38 @@
     box-shadow: 0 0 10px rgba(0,0,0, 0.4);
 }
 
-.purple-back{
-    background-color: rgb(114, 54, 114);
-}
-
 /* Para usar a propriedade flex, é obrigatório usar a propriedade "display: flex" em todos os seletores */
 .footer{
     display: flex; 
     width: 1000px; /* acho que eu preciso especificar uma largura para footer. não sei se tem como fazer de outra maneira,  de ocupar toda a largura do content (deve ter, mas eu sou voado) */
     flex:1;
+    background-color: #3b0764;
     color: white;
 }
 
 .menu{
     display: flex;
     flex: 1;
-    background-color:rgb(88, 47, 126);
+    background-color: #581c87;
     color: white;
 }
 
 .header{
     display: flex;
     flex: 1;
-    background-color: rgb(181, 248, 221)
+    background-color: #9333ea;
+    color: white;
 }
 
 .article{
     display: flex;
     flex: 1;
-    background-color: rgb(87, 148, 184);
+    background-color: #6b21a8;
+    color: white;
 }
 
 #article-light-color{
-    background-color: rgb(124, 164, 187);
+    background-color: #7e22ce;
 }
 
 .block1{
@@ -100,4 +108,25 @@
 .block3{
     display: flex;
     flex: 1;
+}
+
+.button{
+    color: #FFF;
+    background-color: #c084fc;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #5D6063;
+    border-radius: 5px;
+
+    text-decoration: none;
+    transition: background-color 0.2s;
+    width: 100px;
+    margin: 10px;
+    
+}
+
+.button:hover{
+    color: #FFF;
+    background-color: #972eff;
+    text-decoration: underline;
 }
