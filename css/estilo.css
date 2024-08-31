@@ -1,0 +1,102 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco{
+    display:flex;
+    background-color: lightblue;
+    border: 50px;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.footer{
+    display:flex;
+    flex:1;
+}
+
+.article{
+
+}
+
+.superior{
+    display:flex;
+    flex:2;
+} */
+.container{
+    background-color: rgb(255, 170, 170);
+    display:flex; /* Define que o conteúdos dentro de uma div fiquem flexíveis, podendo ser organizados em uma página */
+    justify-content: center; /* Alinha os conteúdos dentro dessa div horizontalmente, como texto: esquerda, meio, direita, com espaço entre etc.*/
+    align-items:center; /* Alinha os conteúdos dentro dessa div verticalmente, no topo, meio, fim, linha de base etc. */
+    flex-wrap: wrap; /* Caso o tamanho dos elementos exceda, é "quebrado uma linha" e colocado os elementos abaixo */
+    height: 100vh;
+}
+
+.content{
+    display:flex; /* Define que o conteúdos dentro de uma div fiquem flexíveis, podendo ser organizados em uma página */
+    justify-content: center; /* Alinha os conteúdos dentro dessa div horizontalmente, como texto: esquerda, meio, direita, com espaço entre etc.*/
+    align-items:center; /* Alinha os conteúdos dentro dessa div verticalmente, no topo, meio, fim, linha de base etc. */
+    flex-wrap: wrap; /* Caso o tamanho dos elementos exceda, é "quebrado uma linha" e colocado os elementos abaixo */
+    flex-direction: column;
+    height: 70vh;
+}
+
+.purple-back{
+    background-color: rgb(114, 54, 114);
+}
+
+.footer{
+    display:flex;
+    width:1000px;
+    height: 100px;
+    flex:1; /* Por conta do flex, a altura não funciona */
+}
+
+.menu{
+    display:flex;
+    flex:1;
+    background-color:rgb(88, 47, 126);
+}
+
+.header{
+    display:flex;
+    flex:1;
+    background-color: rgb(181, 248, 221)
+}
+
+.article{
+    display:flex;
+    flex:1;
+    background-color: rgb(87, 148, 184);
+}
+
+#article-light-color{
+    background-color: rgb(124, 164, 187);
+}
+
+.block1{
+    display:flex;
+    flex:2;
+    width:1000px;
+}
+
+.block2{
+    display:flex;
+    flex: 2;
+    flex-direction: column;
+    
+}
+
+.block3{
+    display:flex;
+    flex:1;
+}
