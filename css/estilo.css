@@ -38,21 +38,22 @@ header{
     align-self: flex-start;
     background-color: #2e064e;
     box-shadow: 0 0 10px rgba(0,0,0, 0.4);
-    width: 100%;
+    width: 100%; /* Algumas vezes tentei colocar 100%, mas nunca dava certo */
 }
 
 .button{
     color: #FFF;
     background-color: #c084fc;
     padding: 10px;
-    text-align: center;
-    border: 2px solid #5D6063;
-    border-radius: 5px;
-
-    text-decoration: none;
-    transition: background-color 0.2s ease;
     width: 100px;
     margin: 10px;
+    height: 20px;
+    border: 2px solid #5D6063;
+    border-radius: 5px;
+    
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
     
 }
 
@@ -93,6 +94,7 @@ header{
     flex: 1;
     background-color: #581c87;
     color: white;
+    flex-direction:column;
 }
 
 .header{
@@ -125,9 +127,90 @@ header{
     flex-direction: column;
 }
 
+
 .block3{
     display: flex;
     flex: 1;
 }
 
 /* Layout2 */
+
+#header-l2{
+    width:100%;
+    background-color: #3b0764;
+}
+
+#block1-l2{
+    flex:3;
+}
+
+.conteudo{
+    display:flex;
+    flex:2;
+    background-color:#7e22ce;
+    flex-direction: column;
+    color: white;
+}
+
+.ad{
+    display:flex;
+    flex:1;
+    background-color: #9333ea;
+    color: white;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.button-size{
+    width: 42px;
+    text-align:center;
+    margin: 0;
+}
+
+.big-letters{
+    font-size: xx-large;
+    font-weight:bold;
+}
+
+#menu-l2-light-color{
+    background-color: #6b21a8;
+}
+
+/* Layout 3 */
+
+#content-l3-height{
+    height:auto;
+    align-self: flex-start;
+}
+
+.tabuleiro{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    max-width: 400px;
+    max-height: 400px;
+    background-color: #3b0764;
+}
+
+.four-squares{
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.square{
+    width: 50px;
+    height: 50px;
+    background-color: #7e22ce;
+}
+
+.transparent-square{
+    background-color: transparent;
+}
